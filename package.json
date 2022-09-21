@@ -1,0 +1,24 @@
+{
+  "name": "cursocypressubp",
+  "version": "1.0.0",
+  "description": "Curso de Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/valentinviale/CursoCypress.git"
+  },
+  "keywords": [
+    "Cypress",
+    "testing",
+    "js"
+  ],
+  "author": "Mauro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valentinviale/CursoCypress/issues"
+  },
+  "homepage": "https://github.com/valentinviale/CursoCypress#readme"
+}
