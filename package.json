@@ -1,0 +1,31 @@
+{
+  "name": "cursocypressubp",
+  "version": "1.0.0",
+  "description": "Curso de Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cypress:run:regression:test": "npx cypress run -e baseUrl=https://automationteststore.com/ -s cypress/integration/1-getting-started/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/valentinviale/CursoCypress.git"
+  },
+  "keywords": [
+    "Cypress",
+    "testing",
+    "js"
+  ],
+  "author": "Mauro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valentinviale/CursoCypress/issues"
+  },
+  "homepage": "https://github.com/valentinviale/CursoCypress#readme",
+  "devDependencies": {
+    "cypress-grep": "^3.0.3",
+    "cypress-mochawesome-reporter": "^3.2.2"
+  },
+  "dependencies": {
+    "cypress": "^9.7.0"
+  }
+}
