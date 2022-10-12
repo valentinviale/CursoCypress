@@ -1,8 +1,7 @@
 {
- "reporter" : "cypress-mochawesome-reporter",
-    
- "video" : false,
+  "reporter": "cypress-mochawesome-reporter",
 
- "screenshot" : false
+  "video": false,
 
+  "screenshot": false
 }

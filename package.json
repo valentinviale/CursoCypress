@@ -6,9 +6,7 @@
   "scripts": {
     "cypress:open:desktop:test": "npx cypress open -e baseUrl=https://automationteststore.com/",
     "cypress:open:mobile:test": "npx cypress open -c viewportWidth=375,viewportHeight=667,userAgent=\"Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X\" -e baseUrl=https://automationteststore.com/",
-    "cypress:run:regression:desktop:test": "npx cypress run -e baseUrl=https://automationteststore.com/ -s cypress/integration/1-getting-started/*.spec.js"
-  
-  
+    "cypress:run:regression:desktop:test": "npx cypress run -e baseUrl=https://automationteststore.com/,grepTags=@regression -s cypress/integration/1-getting-started/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -25,15 +23,14 @@
     "url": "https://github.com/valentinviale/CursoCypress/issues"
   },
   "homepage": "https://github.com/valentinviale/CursoCypress#readme",
-
   "dependencies": {
-    "ajv" : "^8.11.0",
-    "cypress" : "^9.7.0",
+    "ajv": "^8.11.0",
+    "cypress": "^9.7.0",
+    "cypress-image-snapshot": "^4.0.1",
     "cypress-mochawesome-reporter": "^3.2.2"
-
   },
   "devDependencies": {
-    "cypress-grep": "^2.6.1",
+    "cypress-grep": "^2.14.0",
     "cypress-mochawesome-reporter": "^3.2.2"
   }
 }

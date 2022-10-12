@@ -16,8 +16,21 @@
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
-module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-  require ('cypress-mochawesome-reporter/plugin')(on)
+
+const {
+  addMatchImageSnapshotPlugin,
+} = require('cypress-image-snapshot/plugin');
+
+module.exports = (on, config) => {  
+  //require("cypress-grep/src/plugins")(config); =>Reemplazado por import en el spec
+  require ("cypress-mochawesome-reporter/plugin")(on)
 };
+
+module.exports = (on, config) => { 
+  addMatchImagSnapshotPlugin(on,config);
+}
+
+module.exports = (on, config) => {
+  addMatchImageSnapshotPlugin(on, config);
+};
+
